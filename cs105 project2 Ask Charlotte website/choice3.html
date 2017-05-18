@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--import Google fonts-------------------------------------------------------->
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Nixie+One|Special+Elite" rel="stylesheet">
+
+<!----------------------------------------------------------------------------->
+<title>Cookies Page 3</title>
+
+<!--import style sheet--------------------------------------------------------->
+<link type="text/css" rel="stylesheet" href="p2style.css"/>
+</head>
+
+<!--logo----------------------------------------------------------------------->
+<div id="logo">
+    <h1><center>Ask Charlotte. She has all the answers.</center></h1>
+</div>
+
+<!--Navigation bar------------------------------------------------------------->
+	<div>
+	    <ul>
+	      <li><a href="p2AskCharlotte.html">Home</a></li>
+	      <li><a href="p2write2me.html">Write to me</a></li>
+
+	      <li class="dropdown">
+	          <a href="javascript:void(0)" class="dropbtn">Quizzes</a>
+	          <div class="dropdown-content">
+	              <a href="quiz1questions.html">Healthy Relationships Quiz</a>
+	              <a href="p2cookie.html">Advice with Cookies Quiz</a>
+	          </div>
+
+	      <li class="dropdown">
+	          <a href="javascript:void(0)" class="dropbtn">Other</a>
+	          <div class="dropdown-content">
+	              <a href="p2articles.html">Advice Articles</a>
+	              <a href="p2books.html">Books</a>
+	              <a href="p2interactiveform.html">Interactive Javascript Form</a>
+	          </div>
+	      </li>
+	      <li><a href="p2designdoc.html">Design Doc</a></li>
+	    </ul>
+	</div>
+
+<!--background and modified javascript code from CS105 cookies lab------------->
+<div id="background">
+<script type="text/javascript" src="http://cs.smith.edu/~nhowe/105/examples/cookie.js"></script><script>
+  // This function should save the user's choice in a cookie
+
+function saveChoice(choice) {
+  setCookie("gift",choice)
+  }
+</script>
+</head>
+
+<body>
+<p><br></p>
+<p class="paragraph-title articles">Thank you for that answer too.
+  <br> Okay, this is the final question:<br>What kind of gift would you give to your mother?</p>
+
+<div class="cookies">
+<p><a href="choice4.html" onClick="saveChoice('everything and anything she wants')">1. Everything and anything she wants</a></p>
+<p><a href="choice4.html" onClick="saveChoice('kitchen appliances')">2. Kitchen appliances</a></p>
+<p><a href="choice4.html" onClick="saveChoice('I'd take her out to eat anytime/anyday. Well, not when I'm working, but you know what I mean.')">3. I'd take her out to eat anytime/anyday. Well, not when I'm working, but you know what I mean.</a></p>
+<p><a href="choice4.html" onClick="saveChoice('jewelry')">4. Jewelry</a></p>
+<p><a href="choice4.html" onClick="saveChoice('fancy vacations')">5. Fancy vacations</a></p>
+</div>
+
+
+<!--copyright symbol and social media links------------------------------------>
+<div class="copyright">
+  <div id="socialmedia">
+  <p><center>
+    Copyright &#9400; 2016 Thao Phan |
+    <a href="http://www.facebook.com"><img src="facebook.png" alt="Facebook" width="25" height="25" border="0"</a>
+    <a href="http://www.instagram.com"><img src="twitter2.png" alt="Instagram" width="25" height="25" border="0"</a>
+    <a href="http://www.twitter.com"><img src="instagram.png" alt="Twitter" width="25" height="25" border="0"</a>
+  </div>
+  </center></p>
+</div>
+
+</body>
+</html>

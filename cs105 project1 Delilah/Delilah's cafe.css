@@ -1,0 +1,242 @@
+body{
+		/*Background image of the lavender and coffee*/
+		background-image: url(StockSnap_R3GBQ0IEB6.gif);
+		background-size:cover;
+		align-items: stretch;
+}
+.titlepage{
+		/* Stuff with the logo "Delilah's"*/
+		font-family: 'Ribeye Marrow','Butterfly Kids','Raleway Dots', sans-serif;
+		margin-bottom: -15px;
+		font-size: 30px;
+		font-weight: normal;
+		margin-top: 0px;
+		margin-left: 6px;
+		text-indent: 55px;
+		text-shadow: 3px 3px #ffffff;
+		display:flex;
+}
+ul {
+		/*Stuff with the NavBar*/
+		font-family: 'Yeseva One',Verdana, sans-serif;
+		font-size: 13px;
+    list-style-type: none;
+		margin-top: -80px;
+		margin-right: 0px;
+		margin-bottom: auto;
+		/padding: 5px;
+		padding-right: 137px;
+		padding-left: 100px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+    overflow: hidden;
+    background-color: #D9BDEF;
+		box-shadow: 2px 2px 2px 2px #0A571F;
+		float: right;
+		clear: right;
+		text-shadow: 2px 2px white;
+		display:flex;
+}
+li {
+		/*Stuff with the NavBar*/
+    float: left;
+		padding-right: 30px;
+		padding-left: 30px;
+}
+li a {
+		/* NavBar font-color */
+		display: grid;
+    color: black;
+    text-align: center;
+    padding: 6px 6px;
+    text-decoration: none;
+		font-size: 25px;
+}
+li a:hover {
+		/* NavBar hover color */
+		background-color: #B19BED;
+		padding: 6px 6px;
+}
+.info{
+		background-color: white;
+		border: 15px;
+		padding: 60px;
+		font-family: 'Yeseva One', Times, serif;
+		font-size: 20px;
+		text-align: justify;
+		box-shadow: 2px 2px 2px 2px #0A571F;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+}
+#contact{
+		flex-grow: 2;
+		flex-direction: column;
+		display:inline-block;
+		flex-direction:row;
+		flex-wrap: wrap;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		float: right;
+		width: 62%;
+}
+#manifesto{
+	/*Getting divs to sit side by side About Page*/
+	float:left;
+	width: 21%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	padding-bottom: 86px;
+	font-family: 'Playfair Display SC', sans-serif;
+	font-size: 21px;
+}
+#manifesto3{
+	/* Gets divs to sit side by side About Page */
+	float:left;
+	width: 20.8%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	padding-bottom: 94.5px;
+	font-family: 'Playfair Display SC', sans-serif;
+	font-size: 21px;
+}
+#manifesto4{
+	/* Gets divs to sit side by side in Gallery Page */
+	float:left;
+	width: 20.7%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	padding-bottom: 204px;
+	font-family: 'Playfair Display SC', sans-serif;
+	font-size: 21px;
+}
+.menupagefont{
+		font-size: 16px;
+		font-weight:lighter;
+}
+#about{
+		/* Gets divs to sit side by side in Home Page */
+	float:right;
+	width: 62%
+}
+#socialmedia a:hover{
+		/* Contact Page */
+		flex-direction: column;
+		background-color: #C34101;
+}
+#socialmedia{
+	/* Contact Page */
+	display:inline-table;
+	float: left;
+	width: 20.5%;
+	font-family: 'Yeseva One',Times, serif;
+	font-size: 15px;
+	padding-bottom: 50px;
+}
+#socialmedia2{
+	/* Contact Page */
+	display:inline-table;
+	float: left;
+	width: 21%;
+	font-family: 'Yeseva One',Times, sans-serif;
+	font-size: 15px;
+	padding-bottom: 120px;
+}
+#socialmedia3{
+	/* Home page */
+	display:inline-table;
+	float: left;
+	width: 20.7%;
+	font-family: 'Yeseva One',sans-serif;
+	font-size: 15px;
+	padding-bottom: 120px;
+}
+#socialmedia4 a:hover{
+		/* Contact Page social media links, hover color = orange */
+		flex-direction: column;
+		background-color: #C34101;
+}
+#socialmedia4{
+	/* Contact Page social media links, makes them look like a column */
+	display:inline-table;
+	float: left;
+	width: 20.7%;
+	font-family: 'Yeseva One',serif;
+	font-size: 15px;
+	padding-bottom: 326px;
+}
+#menu{
+		/* Contact Page*/
+		display: block;
+		float: right;
+		width:62%;
+}
+#about{
+	/* About Page */
+	display: block;
+}
+.opacity{
+	/*About Page*/
+	background-color: #280a3d;
+	opacity: .80;
+	color: white;
+	font-weight: 900;
+}
+.fontname{
+		/* Used in Home, Contact Page*/
+	  font-family: 'Ribeye Marrow',Times, sans-serif;
+		font-size: 30px;
+		font-style: normal;
+		border-bottom: dotted;
+		border-color: #db4e08;
+		text-align: center;
+}
+#menupagefont{
+	font-size: 24px;
+	padding-bottom: 23px;
+}
+.pictures{
+	/* Menu Page pictures*/
+	padding-top: 40px;
+	background-color: #280a3d;
+	opacity: .90;
+	display: flex;
+	flex-direction: column;
+	font-size: 5px;
+	color: white;
+	box-shadow: 2px 2px 2px 2px #0A571F;
+}
+.fontname1{
+	/* Contact Page - social media div */
+	font-size: 25px;
+	font-family: 'Playfair Display SC',sans-serif;
+	flex: 1;
+}
+.fontname2{
+	/* Contact Page - social media div */
+	font-size: 20px;
+	text-align: center;
+	border-bottom: dotted;
+	border-color: #db4e08;
+}
+.fontname3{
+	font-family: 'Playfair Display', sans-serif;
+	font-style: normal;
+}
+.homepagefont{
+	/* Home page */
+	font-size: 22px;
+	font-family: 'Playfair Display SC', sans-serif;
+}
+.imagespacing{
+		/* Gallery page images*/
+	display: inline-table;
+}
+#socialmedia5 a:hover{
+		/* Home Page social media icons */
+		flex-direction: column;
+		background-color: #C34101;
+}

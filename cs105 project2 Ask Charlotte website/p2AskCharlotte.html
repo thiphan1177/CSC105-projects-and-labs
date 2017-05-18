@@ -1,0 +1,195 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--import Google fonts-------------------------------------------------------->
+
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Nixie+One|Special+Elite" rel="stylesheet">
+
+<!----------------------------------------------------------------------------->
+<title>Ask Charlotte</title>
+
+<!--import style sheet--------------------------------------------------------->
+<link type="text/css" rel="stylesheet" href="p2style.css"/>
+
+</head>
+<!----------------------------------------------------------------------------->
+
+<div id="logo">
+    <h1><center>Ask Charlotte. She has all the answers.</center></h1>
+</div>
+
+<!--Navigation bar------------------------------------------------------------->
+<div>
+    <ul>
+      <li><a href="p2AskCharlotte.html">Home</a></li>
+      <li><a href="p2write2me.html">Write to me</a></li>
+
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Quizzes</a>
+          <div class="dropdown-content">
+              <a href="quiz1questions.html">Healthy Relationships Quiz</a>
+              <a href="p2cookie.html">Advice with Cookies Quiz</a>
+          </div>
+
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Other</a>
+          <div class="dropdown-content">
+              <a href="p2articles.html">Advice Articles</a>
+              <a href="p2books.html">Books</a>
+              <a href="p2interactiveform.html">Interactive Javascript Form</a>
+          </div>
+      </li>
+      <li><a href="p2designdoc.html">Design Doc</a></li>
+    </ul>
+</div>
+
+<!--Slide show----------------------------------------------------------------->
+
+<div id="background">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: 'Nixie One',sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 330px;
+  height: 380px;
+  }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5.6s ease;
+  }
+
+.active {
+  background-color: #717171;
+  }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  }
+</style>
+
+<body>
+<p> <br></p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="cat1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="cat2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="cat3.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 8 seconds
+    }
+</script>
+
+<!--home----------------------------------------------------------------------->
+<div>
+<h2 class="paragraph-title">Hello there!</h2>
+<p class="content-format"> I'm Charlotte Phan and welcome to my official website. If you don't know me, here is a little introduction. I am a professionally trained psychologist from the University of California at Berkley, reporter and advice columnist for San Francisco's newspaper, <i>The Bay Mirror</i>, and author of four best-selling books called <i>Finding Love When You Are Busy Saving the World</i>, <i>How to Cherish Your Family and Friends and Not Forget</i>, <i>Saving and Investing Money the Cool Way</i>, and <i>The Untold Truths About Work That's Meaningful and Pays Well</i>. I have a fifth book coming out that's called <i>Bite Me: A True-ish Story About A Girl and A Vampire who Juggles</i>. The main purpose of this site is so that you can personally email me about any advice you need. I try to always respond, but if you don't get a reply from me soon, I'm very sorry! Understand that I get a lot of emails and I can't read them all at once, although I wish I could.</p>
+
+<h2 class="paragraph-title">How to use this site</h2>
+<div id="instructions" class="content-format">
+  <p><b>Home:</b> Contains introduction, info about me and how-to-use website instructions.</p>
+
+  <p><b>Write to me:</b> Fill out the form and write what advice you would like me to answer.</p>
+
+  <p><b>Quizzes: </b>Take a quiz that tests to see how much you know about being in a healthy relationship! Or take a quiz that results in you getting some good wisdom from yours truly after answering and selecting from a given set of questions and choices. </p>
+
+  <p><b>Other: </b>This tab contains a dropdown menu of 3 pages which are about links to my favorite advice articles from other writers, my books, and an interactive javascript element.</p>
+
+  <p><b>Design Doc:</b> This page is self-explanatory.</p>
+
+<!--copyright symbol and social media links------------------------------------>
+
+<div class="copyright">
+  <div id="socialmedia">
+  <p><center>
+    Copyright &#9400; 2016 Thao Phan |
+    <a href="http://www.facebook.com"><img src="facebook.png" alt="Facebook" width="25" height="25" border="0"</a>
+    <a href="http://www.instagram.com"><img src="twitter2.png" alt="Instagram" width="25" height="25" border="0"</a>
+    <a href="http://www.twitter.com"><img src="instagram.png" alt="Twitter" width="25" height="25" border="0"</a>
+  </div>
+  </center></p>
+</div>
+
+</div>
+</div>
+</div>
+</html>

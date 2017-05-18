@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <title>Cookies Quiz Summary</title>
+<script type="text/javascript" src="http://cs.smith.edu/~nhowe/105/examples/cookie.js"></script>
+</head>
+
+<body>
+
+<h1>Choices Summarized</h1>
+
+<h2>Advice</h2>
+
+<script>
+var topic = getCookie("topic")
+document.writeln("<p>You chose the topic of "+topic+".</p>")
+if (topic=="love") {
+    document.writeln("<p>Don't be afraid to fall in love. If you like someone, just tell them. Just make sure they know who you are first. </p>")
+
+    document.writeln("<p>If you are a career woman or man, I recommend that you read my book called <i>Finding Love When You Are Busy Saving the World</i>. It has a lot of helpful tips on how to find love and keep it going well while you're off being awesome in your job.</p>")
+}
+if (topic=="family") {
+    document.writeln("<p>If you're reading on this website, you're probably at an age where you're starting to realize how much you love your parents. Remember to call them every now and then. They really do love you. If you don't have parents, then I'm sorry if this post made you feel sad. Please don't feel sad.</p>")
+
+    document.writeln("<p>I recommend that you read my book called <i>How To Cherish Your Family and Friends and Not Forget</i>. It has a lot of helpful advice on how to appreciate your loved ones in thoughtful ways.</p>")
+}
+if (topic=="friends") {
+    document.writeln("<p>Be a good friend by telling them the truth in a nice way. Jerks tell the truth in a way that's callous and doesn't take into account what the other person may feel. Don't be a jerk. Also, even if the truth is painful, you can still figure out a way to say it in a nice way. Seriously, if you choose to be more thoughtful in your words and phrase things nicely, lots of people will like you for your consideration <i>and</i> for your honesty.</p>")
+
+    document.writeln("<p>I recommend that you read my book called <i>How To Cherish Your Family and Friends and Not Forget</i>. It has a lot of helpful advice on how to appreciate your loved ones in thoughtful ways.</p>")
+}
+if (topic=="work") {
+    document.writeln("<p>When it's time to work, then work. Don't stand around and do nothing. Other people see what you're doing and they talk about you. The boss will know what's going on and it's going to be hard for you to get promoted. Thus, when it's time to work, then work. </p>")
+
+    document.writeln("<p>If you are looking for that one career that you can be passionate about, I recommend that you read my book called <i>Untold Truths About Finding Work That's Meaningful and Pays</i>. This book actually contains a lot of helpful and honest advice on how you should go about finding a great career. It will make you rethink the whole <i>finding your passion job</i> in a way that could change your life for the better.</p>")
+}
+if (topic=="money") {
+    document.writeln("<p>It feels great to look nice. You can buy nice clothes, but don't go overboard with it and buy so much that you drain your bank account. You can have a nice new thing every once in a while, but save the rest, okay? Better yet, go learn skills that will earn you more money. You can save money, but you can also earn more too. </p>")
+
+    document.writeln("<p>I recommend that you read my book called <i>Saving and Investing Money the Cool Way</i>. This book actually contains a lot of helpful and honest advice on how you can save, invest, and earn more money.</p>")
+}
+</script>
+
+<h2>Food</h2>
+
+<script>
+var food = getCookie("food")
+document.writeln("<p>You chose the food: "+food+".</p>")
+if (food=="hamburgers and hotdogs") {
+    document.writeln("<p>You love the junk foods. I can't blame you. They are delicious! Remember not to eat too much of them okay? Moderation is key. Actually, so is exercise. Do both to keep fit and have a lower risk of developing health problems.</p>")
+}
+if (food=="fried chicken and waffles") {
+    document.writeln("<p>They're one my favorite foods too. They are delicious! Remember not to eat too much of them okay? Moderation is key. Actually, so is exercise. Do both to keep fit and have a lower risk of developing health problems. </p>")
+}
+if (food=="fruits, vegetables, and lean proteins") {
+    document.writeln("<p>I'm so glad that you're eating healthy! Keep up the good work!</p>")
+}
+if (topic=="Vietnamese food. Banh mi is awesome!") {
+    document.writeln("<p>You love Vietnamese food? Me too! I should invite you over for some pho noodles. I promise that your stomach will be in Heaven. </p>")
+}
+</script>
+
+<h2>Gifts</h2>
+
+<script>
+var gift = getCookie("gift")
+document.writeln("<p>You chose the gift: "+gift+"</p>")
+if (gift=="everything and anything she wants") {
+    document.writeln("<p>You love spoiling your momma don't you? That's an awesome trait to have. Moms are the best and deserve it!</p>")
+}
+if (gift=="kitchen appliances") {
+    document.writeln("<p>Your mom must cook a lot. Great job for thinking about her.</p>")
+}
+if (gift=="I'd take her out to eat anytime/anyday. Well, not when I'm working, but you know what I mean.") {
+    document.writeln("<p>You must have heard that a good way to someone's heart is through their stomachs. Good job! Mommas do deserve a nice meal where they aren't the ones cooking.</p>")
+}
+if (gift=="jewelry") {
+    document.writeln("<p>Jewelry is a wonderful gift! Just make sure that your momma actually likes wearing jewelry and isn't the one to let it collect dust in her closet.</p>")
+}
+
+if (gift=="fancy vacations") {
+    document.writeln("<p>Oh man, you are the bee's knees! You totally spoil your mom and in the best way too! She'll love that vacation.</p>")
+}
+</script>
+</body>
+</html>

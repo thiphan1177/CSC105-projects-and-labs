@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Interactive Java Form</title>
+</head>
+<body>
+<script src="formproc.js" language="JavaScript" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+if (window.location.search){
+  // we have some form data to use; now create some content.
+  document.writeln('<p>Hello, '+formValue('name')+'!</p>')
+  if (keyExists('advice')) {
+  	document.writeln('<p>I know this page is kind of random, but lets roll with it. <br><br> Please remember to take care of yourself, exercise, and get plenty of sleep. In addition, remember to tell your friends and family that you love them. If you are not the type to verbalize those kinds of feelings, then at least show the people you love how much they mean to you.</p>')
+  } else {
+  	document.writeln('<p>Note that I know this page is kind of random. And in addition, Even though you do not want advice, I am going to give you some anyway.<br><br>Remember to appreciate all the good people and events in your life. Seriously! And if you are the type to worry about things, stop. Some worry is good, but too much worrying is bad for your health. </p>')
+  }
+  document.bgColor = formValue('clr')
+
+  // include a link to reload form
+  document.writeln('<p>If you want more advice, read some of the links in the Articles page that can be found in the navigation bar.</p>')
+} else {
+  // somebody's looking at this page without coming from the associated form
+  document.writeln('<p>This script processes the results from <a href="jsform.html">this form</a>.</p>')
+  document.writeln("<p>You may view the source if you want to see how it's done.</p>")
+}
+//-->
+</script>
+</body>
+</html>

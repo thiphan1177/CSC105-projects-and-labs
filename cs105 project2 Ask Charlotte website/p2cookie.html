@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--import Google fonts-------------------------------------------------------->
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Nixie+One|Special+Elite" rel="stylesheet">
+
+<!----------------------------------------------------------------------------->
+<title>Cookies Page 1</title>
+
+<!--import style sheet--------------------------------------------------------->
+<link type="text/css" rel="stylesheet" href="p2style.css"/>
+</head>
+
+<!--logo----------------------------------------------------------------------->
+<div id="logo">
+	    <h1><center>Ask Charlotte. She has all the answers.</center></h1>
+	</div>
+
+<!--Navigation bar------------------------------------------------------------->
+	<div>
+	    <ul>
+	      <li><a href="p2AskCharlotte.html">Home</a></li>
+	      <li><a href="p2write2me.html">Write to me</a></li>
+
+	      <li class="dropdown">
+	          <a href="javascript:void(0)" class="dropbtn">Quizzes</a>
+	          <div class="dropdown-content">
+	              <a href="quiz1questions.html">Healthy Relationships Quiz</a>
+	              <a href="p2cookie.html">Advice with Cookies Quiz</a>
+	          </div>
+
+	      <li class="dropdown">
+	          <a href="javascript:void(0)" class="dropbtn">Other</a>
+	          <div class="dropdown-content">
+	              <a href="p2articles.html">Advice Articles</a>
+	              <a href="p2books.html">Books</a>
+	              <a href="p2interactiveform.html">Interactive Javascript Form</a>
+	          </div>
+	      </li>
+	      <li><a href="p2designdoc.html">Design Doc</a></li>
+	    </ul>
+	</div>
+
+<!--background and modified javascript code from CS105 cookies lab------------->
+<div id="background">
+
+<script type="text/javascript" src="http://cs.smith.edu/~nhowe/105/examples/cookie.js"></script>
+<script>
+// This function will save the user's choice in a cookie
+function saveChoice(choice) {
+	setCookie("topic",choice)
+  }
+</script>
+</head>
+<body>
+<hr>
+<p><br></p>
+<p class="paragraph-title articles">Welcome to my page that will give you advice from you answering questions. Okay, so first question: What kind of advice are you looking for? </p>
+
+<div class="cookies">
+<p><a href="choice2.html" onClick="saveChoice('love')">1. Love</a></p>
+<p><a href="choice2.html" onClick="saveChoice('family')">2. Family</a></p>
+<p><a href="choice2.html" onClick="saveChoice('friends')">3. Friends</a></p>
+<p><a href="choice2.html" onClick="saveChoice('work')">4. Work</a></p>
+<p><a href="choice2.html" onClick="saveChoice('money')">5. Money</a></p>
+
+</div>
+<p><br></p>
+
+<!--copyright and social media links------------------------------------------->
+<div class="copyright">
+  <div id="socialmedia">
+  <p><center>
+    Copyright &#9400; 2016 Thao Phan |
+    <a href="http://www.facebook.com"><img src="facebook.png" alt="Facebook" width="25" height="25" border="0"</a>
+    <a href="http://www.instagram.com"><img src="twitter2.png" alt="Instagram" width="25" height="25" border="0"</a>
+    <a href="http://www.twitter.com"><img src="instagram.png" alt="Twitter" width="25" height="25" border="0"</a>
+  </div>
+  </center></p>
+</div>
+
+</body>
+</html>

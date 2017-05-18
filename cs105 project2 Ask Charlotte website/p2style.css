@@ -1,0 +1,285 @@
+body {
+	/* shown on all pages, background image of green leaves against white wall */
+	background-image: url("leaves.jpg");
+	background-repeat: repeat;
+	background-size: cover;
+  }
+
+#logo{
+		/* Formats title-logo on each page, 'Ask Phoebe. She has all the answers' */
+		background-color: white;
+		position: relative;
+		margin: -50px auto;
+		width: 850px;
+		font-family: 'Nixie One', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		text-shadow: 1.75px 1.75px gray;
+		box-shadow: 5px 5px 5px #2C322F;
+		margin-top: 40px;
+		border-radius: 50px;
+		padding-top: 0.05px;
+		padding-bottom: 0.05px;
+		border-style: dashed;
+		border-color: #ffae23;
+	  }
+
+#background { /* white box container  */
+	position: relative;
+	margin: -50px auto;
+	margin-top: -50px;
+	box-shadow: 5px 5px 5px #2C322F;
+	z-index: 0;
+	width: 850px;
+	background: -webkit-linear-gradient(#FEFEFE, #801638, #FEFEFE, #FDB632,#FEFEFE,#027878 ); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FEFEFE, #801638, #FEFEFE, #FDB632,#FEFEFE,#027878 ); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FEFEFE, #ED1280, #FEFEFE, #FDB632,#FEFEFE,#027878 ); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FEFEFE, #801638, #FEFEFE, #FDB632,#FEFEFE, #027878 ); /* Standard syntax (must be last) */
+	padding-bottom: 15px;
+	border-radius: 50px;
+	margin-bottom: 30px;
+  }
+
+	/*--------------------------drop-down navigation bar------------------------*/
+ul {
+		list-style-type: none;
+		margin: 0;
+		width: 850px;
+		margin: 55px auto;
+		padding: 0;
+		transition: 0.5s;
+		overflow: hidden;
+		background-color: #1E4931;
+		box-shadow: 5px 5px 5px #2C322F;
+	  border-radius: 50px;
+		}
+
+li {
+		float: left;
+		}
+
+li a, .dropbtn {
+		display: inline-block;
+		color: white;
+		padding: 16px 16px;
+		padding-left: 45px;
+		padding-right: 40px;
+		text-align: center;
+		transition: 18px;
+		text-decoration: none;
+		font-family: 'Special Elite', sans-serif;
+		font-size: 18.5px;
+		}
+
+li a:hover, .dropdown:hover .dropbtn {
+		background-color: white;
+		color: darkblue;
+	  }
+
+li a:hover{
+	  box-shadow: inset 0 0 0 4px #801638;
+	  }
+
+li.dropdown {
+		display: inline-block;
+		}
+
+.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #33E5DF;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 3;
+		}
+
+.dropdown-content a {
+		color: darkblue;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		}
+
+.dropdown-content a:hover {
+		background-color: white
+	  }
+
+.dropdown:hover .dropdown-content {
+		display: block;
+		}
+
+/*Formats how paragrph, paragrph titles, copyright symbol content looks-------*/
+
+.content-format{
+		font-family: 'Nixie One',sans-serif;
+		font-size: 20px;
+		text-indent: 50px;
+		margin-left: 45px;
+		margin-right: 45px;
+		margin-top: -5px;
+		padding: 10px;
+	  }
+
+.paragraph-title{ /*font for paragraph titles*/
+		font-family: 'Clicker Script', sans-serif;
+		font-size: 50px;
+		text-align: center;
+		background-color: white;
+		border-top: inset;
+		border-bottom: inset;
+		border-color: #f26096;
+		font-weight: lighter;
+    }
+
+.copyright{
+	  font-family: 'Special Elite', sans-serif;
+	  font-size: 20px;
+	  color: white;
+    }
+.articles{
+	font-family: 'Special Elite', sans-serif;
+	font-size: 30px;
+	padding: 10px;
+}
+/*-------makes social media icon grow in size when user hovers over it--------*/
+#socialmedia img:hover{
+		-webkit-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		transform: scale(1.3);
+		}
+
+/* ----------------used in home page down where instructions are-------------*/
+#instructions{
+	  text-indent: 0px;
+    }
+
+
+/*--Form style for Writing to Charlotte for advice----------------------------*/
+input, textarea {
+    padding: 9px;
+    border: solid 1px #E5E5E5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    width: 200px;
+    background: #FFFFFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+		font-size: 13px;
+
+    }
+
+textarea {
+    width: 400px;
+		max-height: 300px;
+    line-height: 150%;
+		font-family: 'Special Elite',sans-serif;
+		font-size: 16px;
+    }
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: #C9C9C9;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+    }
+
+.form label {
+    margin-left: 300px;
+    color: #999999;
+    }
+
+.submit input {
+    width: auto;
+    padding: 9px 15px;
+    background: #617798;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+
+label{
+  	font-family: 'Nixie One','Special Elite',sans-serif;
+  	font-size: 27px;
+  	border-bottom: groove;
+	  border-color: #33E5DF;
+	  color: white;
+	  text-shadow: 5px 5px 5px blue;
+	  text-shadow: 5px 5px 5px darkblue, 0 0 25px #33E5DF, 0 0 5px darkblue;
+    }
+/*----------------------------------------------------------------------------*/
+
+.questionfont{
+	font-family: 'Nixie One','Special Elite',sans-serif;
+	font-size: 18px;
+}
+
+input.spacing{
+	width: 10px;
+}
+
+.bookcanvas{
+	margin-left: 50px;
+}
+
+.canvascontainer{
+	background-color: #E0FFFF;
+	border-top: inset;
+	border-bottom: inset;
+	border-color: #027878;
+}
+
+.links{
+	font-family: 'Nixie One', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	background-color: white;
+	border-top: inset;
+	border-bottom: inset;
+	border-color: #027878;
+	text-indent: 38px;
+}
+
+.designdoc{
+	background-color: white;
+	border-top: inset;
+	border-bottom: inset;
+	border-color: #f26096;
+	padding: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 18.5px;
+}
+
+.interactiveform{
+	background-color: lavender;
+	border-top: inset;
+	border-bottom: inset;
+	border-color: #f26096;
+	padding: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 18.5px;
+}
+
+.interactiveformfont{
+	color: black;
+}
+
+.cookies{
+	background-color: white;
+	border-top: inset;
+	border-bottom: inset;
+	border-color: #f26096;
+	padding: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 18.5px;
+	font-family: "Special Elite";
+	text-align: center;
+
+}

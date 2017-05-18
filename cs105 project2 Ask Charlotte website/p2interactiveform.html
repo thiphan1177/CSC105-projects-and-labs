@@ -1,0 +1,130 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--import Google fonts-------------------------------------------------------->
+
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Nixie+One|Special+Elite" rel="stylesheet">
+
+<!----------------------------------------------------------------------------->
+<title>Ask Charlotte</title>
+
+<!--import style sheet--------------------------------------------------------->
+<link type="text/css" rel="stylesheet" href="p2style.css"/>
+
+</head>
+<!----------------------------------------------------------------------------->
+
+<div id="logo">
+    <h1><center>Ask Charlotte. She has all the answers.</center></h1>
+</div>
+
+<!--Navigation bar------------------------------------------------------------->
+<div>
+    <ul>
+      <li><a href="p2AskCharlotte.html">Home</a></li>
+      <li><a href="p2write2me.html">Write to me</a></li>
+
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Quizzes</a>
+          <div class="dropdown-content">
+              <a href="quiz1questions.html">Healthy Relationships Quiz</a>
+              <a href="p2cookie.html">Advice with Cookies Quiz</a>
+          </div>
+
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Other</a>
+          <div class="dropdown-content">
+              <a href="p2articles.html">Advice Articles</a>
+              <a href="p2books.html">Books</a>
+              <a href="p2interactiveform.html">Interactive Javascript Form</a>
+          </div>
+      </li>
+      <li><a href="p2designdoc.html">Design Doc</a></li>
+    </ul>
+</div>
+
+<!--background and modified javascript code from CS105 examples --------------->
+<div id="background">
+<script src="http://www.cs.smith.edu/~nhowe/105/examples/dom.js"
+language="JavaScript" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function process() {
+  // process script contents
+
+	var nameObj = findObject('name')
+	var nameVal = nameObj.value
+
+	// check for blank name
+	if (nameVal == "") {
+	  alert("Please enter your name.")
+		nameObj.focus()
+		return false
+	  }
+
+	var happyObj = findObject('happy')
+	var happyVal = happyObj.checked
+
+	// find out which radio button has been clicked, if any
+	var clrPink = findObject('clrPink')
+	var clrSkyblue = findObject('clrSkyblue')
+	var clrAqua = findObject('clrAqua')
+	if ((!clrRedObj.checked)&&(!clrGreenObj.checked)&&(!clrBlueObj.checked)) {
+	  alert("Please choose a color.")
+		return false
+	  }
+
+  // submit form
+	return true
+  }
+//-->
+</script>
+</head>
+
+<!----------------------------------------------------------------------------->
+<body>
+<p><br></p>
+<p class="paragraph-title articles">This is a Javascript Form!</p>
+<form class="interactiveform"action="jsproc.html" name="jsform" method="get" onReset="alert('Resetting form.')" onsubmit="return(process())">
+<table summary="formatting table" cellspacing="25">
+<colgroup span="1" align="right"></colgroup>
+<colgroup span="1" align="left"></colgroup>
+  <tr>
+    <td><label class="interactiveformfont" for="name">Name:</label></td>
+    <td><input type="text" name="name" id="name" value="" length="40" maxlength="80"></input></td>
+  </tr>
+  <tr>
+    <td><label class="interactiveformfont" for="advice">Check the box if you want<br /> advice.</label></td>
+    <td><input type="checkbox" name="advice" id="advice" value="yes" checked="checked"></input></td>
+  </tr>
+  <tr>
+    <td><label class="interactiveformfont" for="clr">Pick a color:</label></td>
+    <td>
+		  <input class="spacing" type="radio" name="clr" id="clrPink" value="pink"></input>
+			  <label class="interactiveformfont" for="clrPink">Pink</label><br />
+		  <input class="spacing" type="radio" name="clr" id="clrSkyblue" value="skyblue"></input>
+			  <label class="interactiveformfont" for="clrSkyblue">Sky Blue</label><br />
+		  <input class="spacing" type="radio" name="clr" id="clrAqua" value="aqua"></input>
+			  <label class="interactiveformfont" for="clrAqua">Aqua</label><br />
+	  </td>
+  </tr>
+  <tr>
+    <td><input type="submit" name="submit" value="Submit"></input></td>
+    <td><input type="reset" name="reset" value="Reset"></input></td>
+  </tr>
+</table>
+</form>
+
+<!--Copyright and social media links------------------------------------------>
+<div class="copyright">
+  <div id="socialmedia">
+  <p><center>
+    Copyright &#9400; 2016 Thao Phan |
+    <a href="http://www.facebook.com"><img src="facebook.png" alt="Facebook" width="25" height="25" border="0"</a>
+    <a href="http://www.instagram.com"><img src="twitter2.png" alt="Instagram" width="25" height="25" border="0"</a>
+    <a href="http://www.twitter.com"><img src="instagram.png" alt="Twitter" width="25" height="25" border="0"</a>
+  </div>
+  </center></p>
+</div>
+</body>
+</html>

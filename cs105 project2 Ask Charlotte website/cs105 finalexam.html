@@ -1,0 +1,211 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--import Google fonts-------------------------------------------------------->
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Clicker+Script|Coming+Soon|Cormorant+Infant|Nixie+One|Poiret+One|Shadows+Into+Light+Two|Special+Elite" rel="stylesheet">
+
+<!----------------------------------------------------------------------------->
+<title>Books</title>
+
+<!--import style sheet--------------------------------------------------------->
+<link type="text/css" rel="stylesheet" href="p2style.css"/>
+</head>
+
+<!----------------------------------------------------------------------------->
+<div id="logo">
+    <h1><center>Ask Charlotte. She has all the answers.</center></h1>
+</div>
+
+<!--Navigation bar------------------------------------------------------------->
+<div>
+    <ul>
+      <li><a href="p2AskCharlotte.html">Home</a></li>
+      <li><a href="p2write2me.html">Write to me</a></li>
+
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Quizzes</a>
+          <div class="dropdown-content">
+              <a href="quiz1questions.html">Healthy Relationships Quiz</a>
+              <a href="p2cookie.html">Advice with Cookies Quiz</a>
+          </div>
+
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Other</a>
+          <div class="dropdown-content">
+              <a href="p2articles.html">Advice Articles</a>
+              <a href="p2books.html">Books</a>
+              <a href="p2interactiveform.html">Interactive Javascript Form</a>
+          </div>
+      </li>
+      <li><a href="p2designdoc.html">Design Doc</a></li>
+    </ul>
+</div>
+
+<!--canvas code modified from w3schools---------------------------------------->
+<div id="background">
+
+<body>
+  <p><br></p>
+  <h1 class="paragraph-title articles">This page shows the books that I've written. You can buy them in-stores or online at Amazon, BarnesAndNobles and Target!</h2>
+
+<div class="canvascontainer">
+
+<canvas class="bookcanvas" id="canvas1" width="140" height="200" style="border:3px solid black;">
+</canvas>
+
+<canvas id="canvas2" width="140" height="200" style="border:3px solid black;">
+</canvas>
+
+<canvas id="canvas3" width="140" height="200" style="border:3px solid black;">
+</canvas>
+
+<canvas id="canvas4" width="140" height="200" style="border:3px solid black;">
+</canvas>
+
+<canvas id="canvas5" width="140" height="200" style="border:3px solid black;">
+</canvas>
+
+<script> //Book 1
+var c = document.getElementById("canvas1");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"green");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,140,200);
+ctx.font = "23px Abril Fatface";
+ctx.strokeText("Saving and",12,50)
+ctx.strokeText("Investing",12,73)
+ctx.strokeText("Money the",12,96)
+ctx.strokeText("Cool Way", 12,120)
+ctx.strokeText("by C.Phan", 12,176)
+
+</script>
+
+<script> //Book 2
+var c = document.getElementById("canvas2");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,1,40,130,170);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"magenta");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,140,200);
+ctx.font = "22px Nixie One";
+ctx.strokeText("Finding",8,50)
+ctx.strokeText("Love",8,70)
+ctx.strokeText("When You",8,90)
+ctx.strokeText("Are Busy",8,110)
+ctx.strokeText("Saving the", 8,130)
+ctx.strokeText("World", 8,150)
+ctx.strokeText("by C.Phan", 12,185)
+
+</script>
+
+<script> //Book 3
+var c = document.getElementById("canvas3");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,20,70,30,100);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#1955FB");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,140,200);
+ctx.font = "30px Amatic SC";
+ctx.strokeText("Untold Truths",8,36)
+ctx.strokeText("About Finding",8,63)
+ctx.strokeText("Work that's", 8,90)
+ctx.strokeText("Meaningful", 8,117)
+ctx.strokeText("and Pays Well", 8,143)
+ctx.strokeText("by C.Phan", 12,189)
+
+</script>
+
+<script> //Book 4
+var c = document.getElementById("canvas4");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#44D4EA");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,140,200);
+ctx.font = "23px Poiret One";
+ctx.strokeText("How to",8,44)
+ctx.strokeText("Cherish Your", 8,67)
+ctx.strokeText("Family and", 8,86)
+ctx.strokeText("Friends", 8,110)
+ctx.strokeText("and Not", 8,133)
+ctx.strokeText("Forget", 8,155)
+ctx.strokeText("by C.Phan", 12,189)
+
+</script>
+
+<script> //Book 5
+var c = document.getElementById("canvas5");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(130,0,0,0);
+grd.addColorStop(0,"#ADFF2F");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,140,200);
+ctx.font = "23px Cormorant Infant";
+ctx.strokeText("Bite Me: ",8,34)
+ctx.strokeText("A True-ish", 8,54)
+ctx.strokeText("Story About", 8,74)
+ctx.strokeText("A Girl And ", 8,94)
+ctx.strokeText("a Vampire", 8,114)
+ctx.strokeText("Who Juggles", 8,134)
+ctx.strokeText("by C.Phan", 12,177)
+
+</script>
+
+<!--modified stackoverflow.com Javascript code for "preview effect" when you hover over a link-------------------------------------------------------------->
+  <div class="links ">
+    <p id="p1"><a href="https://www.amazon.com">Amazon</a>: Holiday sale! 35% off books w/code Charlotte!</p>
+    <p id="p2"><a href="http://www.barnesandnoble.com">Barnes and Nobles</a>: Currently, all books are buy one get one half off!</p>
+    <p id="p3"><a href="http://www.target.com">Target</a>: Holiday sale! 30% off w/code Charlotte, free gift included!</p>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <link href="http://codegena.com/assets/css/image-preview-for-link.css" rel="stylesheet">
+      <script type="text/javascript">
+        $(function() {
+                    $('#p1 a').miniPreview({ prefetch: 'parenthover' });
+                    $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                    $('#p3 a').miniPreview({ prefetch: 'parenthover' });
+                    });
+      </script>
+      <script src="http://codegena.com/assets/js/image-preview-for-link.js"></script>
+</div>
+<!----------------------------------------------------------------------------->
+
+</div>
+
+<!--Copyright and social media links------------------------------------------>
+<div class="copyright">
+  <div id="socialmedia">
+  <p><center>
+    Copyright &#9400; 2016 Thao Phan |
+    <a href="http://www.facebook.com"><img src="facebook.png" alt="Facebook" width="25" height="25" border="0"</a>
+    <a href="http://www.instagram.com"><img src="twitter2.png" alt="Instagram" width="25" height="25" border="0"</a>
+    <a href="http://www.twitter.com"><img src="instagram.png" alt="Twitter" width="25" height="25" border="0"</a>
+  </div>
+  </center></p>
+</div>
+</div>
+</body>
+</html>

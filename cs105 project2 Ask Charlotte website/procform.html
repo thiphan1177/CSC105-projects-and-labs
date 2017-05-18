@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JavaScript Form Processor</title>
+</head>
+<body>
+<h1>Form Results</h1>
+<p>Form item names and the values reported are listed in the table below.  For purposes
+of this display, any special characters and spaces found in the
+url above have been restored to their original state.</p>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// this function restores escaped characters and spaces
+function restore(str) {
+	return unescape(str.split('+').join(' '));
+}
+
+// location.search holds the first ? in the url and everything following.
+results = location.search
+// we must strip off the first ? character
+results = results.substring(1,results.length)
+// form items are split at & symbols
+splitres = results.split('&')
+
+if (results.length > 0) {
+  document.writeln('<table border="1">')
+  document.writeln('<tr><th>Form Element Name</th><th>Value</th></tr>')
+  // loop for each item
+  for (res in results.split('&')) {
+    one = splitres[res]
+	  // split the current item at = symbol
+	  onesplit = one.split('=')
+	  // left of = is item name, right is value.
+	  document.writeln('<tr><td>'+restore(onesplit[0])+'</td><td>'+restore(onesplit[1])+'</td></tr>')
+  }
+  document.writeln('</table>')
+} else {
+  document.writeln('<p>There are currently no form results to process.</p>')
+}
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--import Google fonts-------------------------------------------------------->
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Nixie+One|Special+Elite" rel="stylesheet">
+
+<!----------------------------------------------------------------------------->
+<title>Cookies Page 2</title>
+
+<!--import style sheet--------------------------------------------------------->
+<link type="text/css" rel="stylesheet" href="p2style.css"/>
+</head>
+
+<!--logo----------------------------------------------------------------------->
+<div id="logo">
+    <h1><center>Ask Charlotte. She has all the answers.</center></h1>
+</div>
+
+<!--Navigation bar------------------------------------------------------------->
+	<div>
+	    <ul>
+	      <li><a href="p2AskCharlotte.html">Home</a></li>
+	      <li><a href="p2write2me.html">Write to me</a></li>
+
+	      <li class="dropdown">
+	          <a href="javascript:void(0)" class="dropbtn">Quizzes</a>
+	          <div class="dropdown-content">
+	              <a href="quiz1questions.html">Healthy Relationships Quiz</a>
+	              <a href="p2cookie.html">Advice with Cookies Quiz</a>
+	          </div>
+
+	      <li class="dropdown">
+	          <a href="javascript:void(0)" class="dropbtn">Other</a>
+	          <div class="dropdown-content">
+	              <a href="p2articles.html">Advice Articles</a>
+	              <a href="p2books.html">Books</a>
+	              <a href="p2interactiveform.html">Interactive Javascript Form</a>
+	          </div>
+	      </li>
+	      <li><a href="p2designdoc.html">Design Doc</a></li>
+	    </ul>
+	</div>
+
+<!--background and modified javascript code from CS105 cookies lab------------->
+<div id="background">
+<script type="text/javascript" src="http://cs.smith.edu/~nhowe/105/examples/cookie.js"></script><script>
+// This function should save the user's choice in a cookie
+function saveChoice(choice) {
+	setCookie("food",choice)
+  }
+</script>
+</head>
+
+<body>
+
+<p><br></p>
+<p class="paragraph-title articles"> Thank you for your answer.<br> Second question: What are your favorite foods to eat?</p>
+
+<div class="cookies">
+<p><a href="choice3.html" onClick="saveChoice('hamburgers and hotdogs')">1. hamburgers and hotdogs</a></p>
+<p><a href="choice3.html" onClick="saveChoice('fried chicken and waffles')">2. fried chicken and waffles</a></p>
+<p><a href="choice3.html" onClick="saveChoice('fruits, vegetables, and lean proteins')">3. fruits, vegetables, and lean proteins</a></p>
+<p><a href="choice3.html" onClick="saveChoice('Vietnamese food. Banh mi is awesome!')">4. Vietnamese food. Banh mi is awesome!</a></p>
+</div>
+<p><br></p>
+
+<!--copyright symbol and social media links------------------------------------>
+
+<div class="copyright">
+  <div id="socialmedia">
+  <p><center>
+    Copyright &#9400; 2016 Thao Phan |
+    <a href="http://www.facebook.com"><img src="facebook.png" alt="Facebook" width="25" height="25" border="0"</a>
+    <a href="http://www.instagram.com"><img src="twitter2.png" alt="Instagram" width="25" height="25" border="0"</a>
+    <a href="http://www.twitter.com"><img src="instagram.png" alt="Twitter" width="25" height="25" border="0"</a>
+  </div>
+  </center></p>
+</div>
+
+</body>
+</html>
